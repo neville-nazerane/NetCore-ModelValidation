@@ -38,8 +38,13 @@ namespace NetCore.ModelValidation.Core
             }
         }
 
+        public UnMappedValidationHelper<TModel> GetHelper<TModel>()
+            => new UnMappedValidationHelper<TModel>(this);
+
         public TypedValidationHelper<TModel> GetHelper<TModel>(TModel model)
             => new TypedValidationHelper<TModel>(this, model);
+
+        
 
         public IEnumerable<string> GetErrors(string key) => GetErrorsFrom(errors, key);
 
@@ -88,26 +93,7 @@ namespace NetCore.ModelValidation.Core
 
         public IEnumerable<KeyValuePair<string, IEnumerable<string>>> this[object model] => GetErrors(model);   
 
-        public class TypedValidationHelper<TModel>
-        {
 
-            private readonly Dictionary<string, PropertyInfo> properties;
-            private readonly ModelValidator context;
-            private readonly TModel model;
-
-            internal TypedValidationHelper(ModelValidator context, TModel model)
-            {
-                properties = typeof(TModel).GetProperties().ToDictionary(p => p.Name);
-                this.context = context;
-                this.model = model;
-            }
-
-            public IEnumerable<string> GetErrors<T>(Expression<Func<TModel, T>> lamda)
-                => context.GetErrors(model, lamda);
-
-            public IEnumerable<string> AddError<T>(Expression<Func<TModel, T>> lamda, string error)
-                => context.AddError(model, lamda, error);
-        }
 
     }
 }
