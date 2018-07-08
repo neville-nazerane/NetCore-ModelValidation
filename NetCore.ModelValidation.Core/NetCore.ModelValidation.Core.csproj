@@ -1,7 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>NetCore.ModelValidation.Core</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Neville Nazerane</Authors>
+    <Description>
+      Core functionality to handle model validation. 
+      Allows you to add and list errors mapped to objects and its fields
+    </Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>
+      - Basic add and get functions setup
+    </PackageReleaseNotes>
+    <PackageTags>model validations agile</PackageTags>
+    <PackageProjectUrl>https://github.com/neville-nazerane/NetCore-ModelValidation</PackageProjectUrl>
+    <RootNamespace>NetCore.ModelValidation.Core</RootNamespace>
+    <AssemblyName>NetCore.ModelValidation.Core</AssemblyName>
   </PropertyGroup>
 
 </Project>
