@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>NetCore.ModelValidation</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Neville Nazerane</Authors>
+    <Description>
+      Model validations helper for aspnetcore. Allows you to have validations set in places such as your
+      business logic with the help of NetCore.ModelValidation.Core nuget
+    </Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>
+      - Basic extensions for controller to help in validations
+    </PackageReleaseNotes>
+    <PackageTags>model validations agile asp net core</PackageTags>
+    <PackageProjectUrl>https://github.com/neville-nazerane/NetCore-ModelValidation</PackageProjectUrl>
+    <RootNamespace>NetCore.ModelValidation</RootNamespace>
+    <AssemblyName>NetCore.ModelValidation</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+    <PackageReference Include="NetCore.ModelValidation.Core" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
