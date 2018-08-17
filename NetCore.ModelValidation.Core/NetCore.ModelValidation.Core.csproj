@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>NetCore.ModelValidation.Core</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <Authors>Neville Nazerane</Authors>
     <Description>
       Core functionality to handle model validation. 
@@ -11,12 +11,16 @@
     </Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
-      - Basic add and get functions setup
+      - Moved service extension to this package
     </PackageReleaseNotes>
     <PackageTags>model validations agile</PackageTags>
     <PackageProjectUrl>https://github.com/neville-nazerane/NetCore-ModelValidation</PackageProjectUrl>
     <RootNamespace>NetCore.ModelValidation.Core</RootNamespace>
     <AssemblyName>NetCore.ModelValidation.Core</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+  </ItemGroup>
 
 </Project>

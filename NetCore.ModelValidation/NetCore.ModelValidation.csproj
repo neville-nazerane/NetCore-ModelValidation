@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>NetCore.ModelValidation</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <Authors>Neville Nazerane</Authors>
     <Description>
       Model validations helper for aspnetcore. Allows you to have validations set in places such as your
@@ -11,7 +11,7 @@
     </Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
-      - Basic extensions for controller to help in validations
+      - Moved service extension from this package
     </PackageReleaseNotes>
     <PackageTags>model validations agile asp net core</PackageTags>
     <PackageProjectUrl>https://github.com/neville-nazerane/NetCore-ModelValidation</PackageProjectUrl>
